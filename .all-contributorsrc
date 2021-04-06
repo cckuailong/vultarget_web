@@ -1,0 +1,216 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "badgeTemplate": "<img src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square\" />",
+  "contributors": [
+    {
+      "login": "anonymity3712",
+      "name": "anonymity3712",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/40228178?v=4",
+      "profile": "https://github.com/anonymity3712",
+      "contributions": [
+        "bug",
+        "blog"
+      ]
+    },
+    {
+      "login": "TC130",
+      "name": "TC130",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8563648?v=4",
+      "profile": "https://github.com/TC130",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "hackwuli",
+      "name": "hackwuli",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/47844992?v=4",
+      "profile": "https://github.com/hackwuli",
+      "contributions": [
+        "question"
+      ]
+    },
+    {
+      "login": "lxyevil",
+      "name": "lxyevil",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/17840712?v=4",
+      "profile": "https://github.com/lxyevil",
+      "contributions": [
+        "test"
+      ]
+    },
+    {
+      "login": "littleheary",
+      "name": "littleheary",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/26987382?v=4",
+      "profile": "https://github.com/littleheary",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "q2118cs",
+      "name": "Rai Sun",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/18305067?v=4",
+      "profile": "https://github.com/q2118cs",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "luobei-Dynamic",
+      "name": "luobei-Dynamic",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/13211734?v=4",
+      "profile": "https://github.com/luobei-Dynamic",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "wanglaiqi",
+      "name": "wanglaiqi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/9366714?v=4",
+      "profile": "https://github.com/wanglaiqi",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "zhuhongchang1227",
+      "name": "zhuhongchang1227",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59280688?v=4",
+      "profile": "https://github.com/zhuhongchang1227",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "daibing125",
+      "name": "daibing",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/49011861?v=4",
+      "profile": "https://github.com/daibing125",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "zhangfeitao",
+      "name": "zhangfeitao",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/10626929?v=4",
+      "profile": "https://github.com/zhangfeitao",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "TORRYGUO",
+      "name": "TORRYGUO",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/43666746?v=4",
+      "profile": "https://github.com/TORRYGUO",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "Becivells",
+      "name": "李大壮",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12883127?v=4",
+      "profile": "https://github.com/Becivells",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Vdeem",
+      "name": "Vdeem",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/24988893?v=4",
+      "profile": "https://github.com/Vdeem",
+      "contributions": [
+        "blog"
+      ]
+    },
+    {
+      "login": "xiajibaxie",
+      "name": "xiajibaxie",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/45410321?v=4",
+      "profile": "https://github.com/xiajibaxie",
+      "contributions": [
+        "blog",
+        "code"
+      ]
+    },
+    {
+      "login": "Frivolous-scholar",
+      "name": "Frivolous-scholar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/48624840?v=4",
+      "profile": "https://github.com/Frivolous-scholar",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "D4ch1au",
+      "name": "D4ch1au",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46175208?v=4",
+      "profile": "https://github.com/D4ch1au",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "m2ayill",
+      "name": "M2ayill",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22850233?v=4",
+      "profile": "https://github.com/M2ayill",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Whippet0",
+      "name": "Whippet",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/46486374?v=4",
+      "profile": "https://github.com/Whippet0",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Aa1141415869",
+      "name": "Aa1141415869",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/46923769?v=4",
+      "profile": "https://github.com/Aa1141415869",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "fengyehack",
+      "name": "fengyehack",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/58175380?v=4",
+      "profile": "https://github.com/fengyehack",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "wuli888",
+      "name": "wuli",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/47844992?v=4",
+      "profile": "https://github.com/wuli888",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "vulfocus",
+  "projectOwner": "fofapro",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
