@@ -164,7 +164,8 @@
       },
       redirWP(row){
         let image_name = row.vul_name.split(":")[0];
-        let wpUrl = "https://github.com/cckuailong/" + image_name + ".md";
+        let cont = image_name.split("/")
+        let wpUrl = "https://github.com/cckuailong/" + cont[0] + "/writeup/" + cont[1] + "/README.md";
         window.open(wpUrl,'_blank');
       },
       querySearchImageAsync(queryString, cb) {
