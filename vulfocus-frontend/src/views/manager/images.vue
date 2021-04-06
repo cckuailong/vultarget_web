@@ -165,7 +165,7 @@
       redirWP(row){
         let image_name = row.vul_name.split(":")[0];
         let cont = image_name.split("/")
-        let wpUrl = "https://github.com/cckuailong/" + cont[0] + "/writeup/" + cont[1] + "/README.md";
+        let wpUrl = "https://github.com/cckuailong/" + cont[0] + "/blob/master/writeup/" + cont[1] + "/README.md";
         window.open(wpUrl,'_blank');
       },
       querySearchImageAsync(queryString, cb) {
