@@ -1,4 +1,4 @@
-# Apache Shiro 1.2.4反序列化漏洞（CVE-2016-4437）by [anonymity3712](https://github.com/anonymity3712)
+# Apache Shiro 1.2.4反序列化漏洞（CVE-2016-4437）
 
 ## 漏洞描述
 
